@@ -1,0 +1,11 @@
+# Node and React
+node_modules/
+build/
+dist/
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+.pnp.js
+.vscode/
