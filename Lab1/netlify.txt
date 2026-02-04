@@ -1,0 +1,226 @@
+PS C:\Users\smv\23cs177> cd Lab1
+PS C:\Users\smv\23cs177\Lab1> npm install -g netlify-cli
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+changed 1050 packages in 30s
+
+229 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\smv\23cs177\Lab1> ntl init
+
+No git remote was found, would you like to set one up?
+
+It is recommended that you initialize a project that has a remote repository in GitHub.
+
+This will allow for Netlify Continuous deployment to build branch & PR previews.
+
+For more details on Netlify CI check out the docs: http://bit.ly/2N0Jhy5
+
+? Do you want to create a Netlify project without a git repository? Yes, 
+create and deploy project manually
+? Team: SMVITM
+? Project name (leave blank for a random name; you can change it later): 
+lab1
+ »   Warning: lab1.netlify.app already exists. Please try a different slug.
+? Project name (leave blank for a random name; you can change it later): 
+lab11
+ »   Warning: lab11.netlify.app already exists. Please try a different slug.
+? Project name (leave blank for a random name; you can change it later): 
+
+
+Project Created
+
+Admin URL:  https://app.netlify.com/projects/silly-dasik-7576a0
+URL:        https://silly-dasik-7576a0.netlify.app
+Project ID: 8e258376-c7bb-495e-b03a-a7626c6153f0
+
+✔ Linked to silly-dasik-7576a0
+"silly-dasik-7576a0" project was created
+
+? Do you want to configure build settings? We'll suggest settings for 
+your project automatically Yes
+We detected that you're using Vite. Below are recommended build settings.
+For each setting, press Enter to accept the default or provide your own value.
+
+? Your build command (hugo build/yarn run build/etc): npm run build
+? Directory to deploy (blank for current dir): dist
+? No netlify.toml detected. Would you like to create one with these build
+ settings? Yes
+
+To deploy to this project, run netlify deploy.
+PS C:\Users\smv\23cs177\Lab1> run netlify deploy
+run : The term 'run' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the    
+name, or if a path was included, verify that the path is correct and     
+try again.
+At line:1 char:1
++ run netlify deploy
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (run:String) [], CommandN  
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\smv\23cs177\Lab1> netlify deploy    
+
+Netlify Build
+────────────────────────────────────────────────────────────────
+
+❯ Version
+  @netlify/build 35.5.13
+
+❯ Flags
+  accountId: 65f41fe2c1587944b6eae019
+  deployId: 698199cab747157113fb0879
+
+❯ Current directory
+  C:\Users\smv\23cs177\Lab1
+
+❯ Config file
+  C:\Users\smv\23cs177\netlify.toml
+
+❯ Context
+  production
+
+build.command from netlify.toml
+────────────────────────────────────────────────────────────────
+
+$ npm run build
+
+> lab1@0.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+✓ 30 modules transformed.
+dist/index.html                   0.45 kB │ gzip:  0.29 kB
+dist/assets/index-COcDBgFa.css    1.38 kB │ gzip:  0.70 kB
+dist/assets/index-DVKFDyvS.js   193.42 kB │ gzip: 60.75 kB
+✓ built in 970ms
+
+(build.command completed in 2s)
+
+Functions bundling
+────────────────────────────────────────────────────────────────
+
+The Netlify Functions setting targets a non-existing directory: netlify\functions
+
+(Functions bundling completed in 2ms)
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+Deploy path:        C:\Users\smv\23cs177\Lab1\dist
+Functions path:     C:\Users\smv\23cs177\Lab1\netlify\functions
+Configuration path: C:\Users\smv\23cs177\netlify.toml
+
+Functions folder "C:\Users\smv\23cs177\Lab1\netlify\functions" specified but it doesn't exist! Will proceed without deploying functions
+✔ Finished uploading blobs to deploy store                               
+✔ No cached functions were found
+✔ Finished hashing
+✔ CDN requesting 1 files
+✔ Finished uploading 1 assets
+✔ Deploy is live!
+
+Netlify Build Complete
+────────────────────────────────────────────────────────────────
+
+(Netlify Build completed in 10.9s)
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+╭───────────────────── ⬥  Draft deploy is live ⬥  ─────────────────────╮ 
+│                                                                      │ 
+│                          Deployed draft to                           │ 
+│   https://698199cab747157113fb0879--silly-dasik-7576a0.netlify.app   │ 
+│                                                                      │ 
+╰──────────────────────────────────────────────────────────────────────╯ 
+
+Build logs:         https://app.netlify.com/projects/silly-dasik-7576a0/deploys/698199cab747157113fb0879
+Function logs:      https://app.netlify.com/projects/silly-dasik-7576a0/logs/functions?scope=deploy:698199cab747157113fb0879
+Edge function Logs: https://app.netlify.com/projects/silly-dasik-7576a0/logs/edge-functions?scope=deployid:698199cab747157113fb0879
+
+If everything looks good on your draft URL, deploy it to your main project URL with the --prod flag:
+netlify deploy --prod
+
+PS C:\Users\smv\23cs177\Lab1> netlify deploy --prod
+
+Netlify Build
+────────────────────────────────────────────────────────────────
+
+❯ Version
+  @netlify/build 35.5.13
+
+❯ Flags
+  accountId: 65f41fe2c1587944b6eae019
+  deployId: 698199e8d286c589c53d11dd
+
+❯ Current directory
+  C:\Users\smv\23cs177\Lab1
+
+❯ Config file
+  C:\Users\smv\23cs177\netlify.toml
+
+❯ Context
+  production
+
+build.command from netlify.toml
+────────────────────────────────────────────────────────────────
+
+$ npm run build
+
+> lab1@0.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+✓ 30 modules transformed.
+dist/index.html                   0.45 kB │ gzip:  0.29 kB
+dist/assets/index-COcDBgFa.css    1.38 kB │ gzip:  0.70 kB
+dist/assets/index-DVKFDyvS.js   193.42 kB │ gzip: 60.75 kB
+✓ built in 935ms
+
+(build.command completed in 1.7s)
+
+Functions bundling
+────────────────────────────────────────────────────────────────
+
+The Netlify Functions setting targets a non-existing directory: netlify\functions
+
+(Functions bundling completed in 3ms)
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+Deploy path:        C:\Users\smv\23cs177\Lab1\dist
+Functions path:     C:\Users\smv\23cs177\Lab1\netlify\functions
+Configuration path: C:\Users\smv\23cs177\netlify.toml
+
+Functions folder "C:\Users\smv\23cs177\Lab1\netlify\functions" specified but it doesn't exist! Will proceed without deploying functions
+✔ Finished uploading blobs to deploy store                               
+✔ No cached functions were found
+✔ Finished hashing
+✔ CDN requesting 0 files
+✔ Finished uploading 0 assets
+✔ Deploy is live!
+
+Netlify Build Complete
+────────────────────────────────────────────────────────────────
+
+(Netlify Build completed in 6.1s)
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+╭─────────────────── ⬥  Production deploy is live ⬥  ───────────────────╮
+│                                                                       │
+│                     Deployed to production URL:                       │
+│                https://silly-dasik-7576a0.netlify.app                 │
+│                                                                       │
+│                          Unique deploy URL:                           │
+│   https://698199e8d286c589c53d11dd--silly-dasik-7576a0.netlify.app    │
+│                                                                       │
+╰───────────────────────────────────────────────────────────────────────╯
+
+Build logs:         https://app.netlify.com/projects/silly-dasik-7576a0/deploys/698199e8d286c589c53d11dd
+Function logs:      https://app.netlify.com/projects/silly-dasik-7576a0/logs/functions
+Edge function Logs: https://app.netlify.com/projects/silly-dasik-7576a0/logs/edge-functions
+PS C:\Users\smv\23cs177\Lab1> 
