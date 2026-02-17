@@ -131,3 +131,13 @@ border-top-right-radius: 10px;
 .caption { 
 padding: 5px; 
 font-size: 14px; font-weight: bold; }
+
+
+
+   ╭────────────────────────── ⬥  Production deploy is live ⬥  ───────────────────────────╮
+   │                                                                                      │
+   │             Deployed to production URL: https://lab523cs177.netlify.app              │
+   │                                                                                      │
+   │       Unique deploy URL: https://699410b9e05bd421db8de88b--lab523cs177.netlify.app   │
+   │                                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────────────────────╯
