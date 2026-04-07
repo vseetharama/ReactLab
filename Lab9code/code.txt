@@ -142,3 +142,11 @@ export default Contact;
 
 
 npm install react-router-dom
+
+╭────────────────────────── ⬥  Production deploy is live ⬥  ───────────────────────────╮
+   │                                                                                      │
+   │             Deployed to production URL: https://lab923cs177.netlify.app              │
+   │                                                                                      │
+   │       Unique deploy URL: https://69d4a5664ab7f0a5c8fa37e6--lab923cs177.netlify.app   │
+   │                                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────────────────────╯
