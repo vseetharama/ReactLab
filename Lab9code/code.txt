@@ -1,0 +1,152 @@
+src/
+ ├── App.jsx
+ ├── main.jsx
+ ├── Home.jsx
+ ├── About.jsx
+ ├── Contact.jsx
+
+
+   🔹 main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.jsx';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+🔹 App.jsx
+import React from 'react';
+import { Routes, Route, NavLink } from 'react-router-dom';
+import Home from './Home.jsx';
+import About from './About.jsx';
+import Contact from './Contact.jsx';
+
+function App() {
+  const linkStyle = ({ isActive }) => ({
+    margin: '10px',
+    textDecoration: 'none',
+    color: isActive ? 'blue' : 'black',
+    fontWeight: isActive ? 'bold' : 'normal'
+  });
+
+  return (
+    <div>
+      <nav
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
+          padding: '10px',
+          backgroundColor: '#f0f0f0'
+        }}
+      >
+        <NavLink to="/" style={linkStyle} end>
+          Home
+        </NavLink>
+        <NavLink to="/about" style={linkStyle}>
+          About
+        </NavLink>
+        <NavLink to="/contact" style={linkStyle}>
+          Contact
+        </NavLink>
+      </nav>
+
+      <div style={{ padding: '20px', textAlign: 'center' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+🔹 Home.jsx
+import React from 'react';
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to My Website</h1>
+      <p>This is the Home page of our React Router project.</p>
+
+      <h3>Features:</h3>
+      <ul style={{ listStyle: 'none' }}>
+        <li>✅ Navigation using React Router</li>
+        <li>✅ Multiple pages</li>
+        <li>✅ Active link styling</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Home;
+🔹 About.jsx
+import React from 'react';
+
+function About() {
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>
+        This project demonstrates how to use React Router to create
+        multiple pages in a React application.
+      </p>
+
+      <p>
+        Technologies used:
+      </p>
+
+      <ul style={{ listStyle: 'none' }}>
+        <li>⚛️ React</li>
+        <li>🚀 Vite</li>
+        <li>🔗 React Router</li>
+      </ul>
+    </div>
+  );
+}
+
+export default About;
+
+🔹 Contact.jsx
+import React from 'react';
+
+function Contact() {
+  return (
+    <div>
+      <h1>Contact Us</h1>
+
+      <p>Email: example@gmail.com</p>
+      <p>Phone: +91 9876543210</p>
+
+      <h3>Send Message</h3>
+
+      <form>
+        <input type="text" placeholder="Your Name" /><br /><br />
+        <input type="email" placeholder="Your Email" /><br /><br />
+        <textarea placeholder="Your Message"></textarea><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default Contact;
+
+
+npm install react-router-dom
+
+╭────────────────────────── ⬥  Production deploy is live ⬥  ───────────────────────────╮
+   │                                                                                      │
+   │             Deployed to production URL: https://lab923cs177.netlify.app              │
+   │                                                                                      │
+   │       Unique deploy URL: https://69d4a5664ab7f0a5c8fa37e6--lab923cs177.netlify.app   │
+   │                                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────────────────────╯
