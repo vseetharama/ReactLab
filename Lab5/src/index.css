@@ -1,0 +1,35 @@
+.image-card {
+  width: 180px; /* card width */
+  height: 180px; /* card height */
+  text-align: center; /* center text */
+  overflow: hidden; /* hide extra image */
+  border-radius: 10px; /* rounded corners */
+  background: white; /* white card */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* shadow */
+  transition: transform 0.3s ease-in-out; /* smooth zoom */
+}
+.gallery-container {
+  width: 800px; /* fixed width */
+  height: 500px; /* fixed height */
+  border: 2px solid #ddd; /* light border */
+  display: flex; /* flex layout */
+  flex-wrap: wrap; /* move next line */
+  gap: 10px; /* space between cards */
+  padding: 10px; /* inside spacing */
+  overflow-y: auto; /* vertical scroll */
+  justify-content: center; /* center cards */
+  align-items: center; /* center vertically */
+  background: #f8f8f8; /* light gray background */
+}
+.image-card:hover {
+  transform: scale(1.05); /* zoom card */
+}
+
+/* Image styling */
+.image-card img {
+  width: 100%; /* full width */
+  height: 55%; /* half card height */
+  object-fit: cover; /* fit image properly */
+  border-top-left-radius: 10px; /* top left round */
+  border-top-right-radius: 10px; /* top right round */
+}

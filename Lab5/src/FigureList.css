@@ -1,0 +1,36 @@
+/* Main container for whole gallery */
+.container {
+  text-align: center; /* center all text */
+  padding: 20px; /* space inside container */
+}
+
+/* Button wrapper */
+.buttons {
+  margin-bottom: 20px; /* space below button section */
+}
+
+/* All buttons */
+button {
+  margin: 5px; /* outside spacing */
+  padding: 10px 15px; /* inside spacing */
+  font-size: 16px; /* text size */
+  border: none; /* remove border */
+  cursor: pointer; /* hand cursor */
+  background-color: green; /* green button */
+  color: white; /* white text */
+  border-radius: 5px; /* rounded corners */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: darkgreen; /* darker on hover */
+}
+
+/* Gallery image layout */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    
+}
